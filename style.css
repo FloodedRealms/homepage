@@ -1,0 +1,144 @@
+/*
+ * style.css
+ * Copyright (C) 2023 kevin
+ *
+ * Distributed under terms of the MIT license.
+ */
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+   --black: #2b303b;
+   --red1: #bf616a;
+   --green1: #a3be8c;
+   --yellow1: #ebcb8b;
+   --blue1: #8fa1b3;
+   --magenta1: #b48ead;
+   --teal1: #96b5b4;
+   --lightgrey: #c0c5ce;
+   --grey: #65737e;
+   --red2: #bf616a;
+   --green2: #a3be8c;
+   --yellow2: #ebcb8b;
+   --blue2 #8fa1b3;
+   --magenta2: #b48ead;
+   --teal2: #96b5b4;
+   --white: #eff1f5;
+   --foreground: #eff1f5;
+   --background: #4f5d66;
+    background-color: var(--background);
+    color: var(--foreground);
+
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+	color: var(--magenta1);
+	font-weight: bold;
+}
+
+#main-flex {
+	grid-area: middle;
+	flex-wrap: wrap;
+	border: 5px solid;
+	border-color: var(--green1);
+
+}
+
+#main-flex section {
+	flex: 1 1 33%;
+	margin: 2px;
+}
+/* Style the header */
+.header {
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	background-color: var(--blue1);
+}
+
+.side-img {
+	grid-area: left;
+	background-image: "./assets/underconstruction.gif";
+}
+.content {
+	display: grid;
+	  grid-template-areas: 
+    'header header header header header header' 
+    'left left left middle middle right' 
+    'footer footer footer footer footer footer';
+	background-color: var (--lightgrey);
+	color: var(--white);
+	width: 100%;
+	text-align: center;
+	border: 5px solid;
+	border-color: var(--red1);
+}
+
+/* Clear floats after the columns */
+.content:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.sidenav {
+	grid-area: right;
+	z-index: 1;
+	background-color: var(--black);
+	overflow-x: hidden;
+}
+
+.activity {
+	color var (--black);
+	float: center;
+}
+
+.linkcard {
+	width: 33%;
+}
+.linkcard:hover {
+	background-color: var(--black);;
+	color: var(--white);
+}
+
+/* Side navigation links */
+.sidenav a {
+	color: var(--white);
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.sidenav ul[title]::before {
+	content: attr(title);
+	display: block;
+	color: var(--white);
+	font-weight: bold;
+	padding: 4px;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+	background-color: var(--black);;
+	color: var(--white);
+}
+
+/* Style the footer */
+.footer {
+	background-color: #f1f1f1;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+	.column.side, .column.middle {
+		width: 100%;
+	}
+}
