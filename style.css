@@ -42,6 +42,10 @@ h3 {
 	font-weight: bold;
 }
 
+a {
+	color: var(--teal1);
+}
+
 #main-flex {
 	grid-area: middle;
 	flex-wrap: wrap;
@@ -64,8 +68,8 @@ h3 {
 
 .side-img {
 	grid-area: left;
-	background-image: "./assets/underconstruction.gif";
 }
+
 .content {
 	display: grid;
 	  grid-template-areas: 
@@ -107,6 +111,11 @@ h3 {
 	color: var(--white);
 }
 
+.projects {
+	float: right;
+	width: 33%;
+}
+
 /* Side navigation links */
 .sidenav a {
 	color: var(--white);
@@ -131,11 +140,11 @@ h3 {
 
 /* Style the footer */
 .footer {
-	background-color: #f1f1f1;
 	padding: 10px;
 	text-align: center;
 }
-
+.faq {
+}
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
 	.column.side, .column.middle {
