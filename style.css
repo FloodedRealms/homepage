@@ -32,14 +32,14 @@
 	--white: #eff1f5;
 	--foreground: #eff1f5;
 	--background: #4f5d66;
-	background-image::url('/assets/images/gradient.png');
+	background-image::url('/assets/images/water1.gif');
 	color: var(--foreground);
 	--main-color: var(--grey);
 	--main-color-dk: var(--lightgrey);
 	--accent-1:var(--teal);
 	--accent-2:var(blue1);
 	--content-spacing:5px;
-	--background-img:url('/assets/images/gradient.png');
+	--background-img:url('/assets/images/water1.gif');
 	--banner:url('/assets/images/banner.png');
 	--titleBars:url('/assets/images/titlebar.png');
 	--text-color:white;
