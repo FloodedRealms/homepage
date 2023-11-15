@@ -4,150 +4,182 @@
  *
  * Distributed under terms of the MIT license.
  */
-
-* {
-	box-sizing: border-box;
-}
+/*
+ * {
+ box-sizing: border-box;
+ } */
 
 :root {
-   --black: #2b303b;
-   --red1: #bf616a;
-   --green1: #a3be8c;
-   --yellow1: #ebcb8b;
-   --blue1: #8fa1b3;
-   --magenta1: #b48ead;
-   --teal1: #96b5b4;
-   --lightgrey: #c0c5ce;
-   --grey: #65737e;
-   --red2: #bf616a;
-   --green2: #a3be8c;
-   --yellow2: #ebcb8b;
-   --blue2 #8fa1b3;
-   --magenta2: #b48ead;
-   --teal2: #96b5b4;
-   --white: #eff1f5;
-   --foreground: #eff1f5;
-   --background: #4f5d66;
-    background-color: var(--background);
-    color: var(--foreground);
 
+} 
+
+:root {
+	--black: #2b303b;
+	--red1: #bf616a;
+	--green1: #a3be8c;
+	--yellow1: #ebcb8b;
+	--blue1: #8fa1b3;
+	--magenta1: #b48ead;
+	--teal1: #96b5b4;
+	--lightgrey: #c0c5ce;
+	--grey: #65737e;
+	--red2: #bf616a;
+	--green2: #a3be8c;
+	--yellow2: #ebcb8b;
+	--blue2 #8fa1b3;
+	--magenta2: #b48ead;
+	--teal2: #96b5b4;
+	--white: #eff1f5;
+	--foreground: #eff1f5;
+	--background: #4f5d66;
+	background-image::url('/assets/images/gradient.png');
+	color: var(--foreground);
+	--main-color: var(--grey);
+	--main-color-dk: var(--lightgrey);
+	--accent-1:var(--teal);
+	--accent-2:var(blue1);
+	--content-spacing:5px;
+	--background-img:url('/assets/images/gradient.png');
+	--banner:url('/assets/images/banner.png');
+	--titleBars:url('/assets/images/titlebar.png');
+	--text-color:white;
+	--link-color:var(--green1);
+	--border:1px solid black;
+	--arrows:url('/assets/images/arrow.png');
 }
 
-body {
-	font-family: Arial, Helvetica, sans-serif;
+html,body {
+	margin:0;
+	box-sizing:border-box;
+	font-family:"Courier";
 }
 
-h3 {
-	color: var(--magenta1);
-	font-weight: bold;
+body{
+	background-image:var(--background-img);
+	color:var(--text-color);
+	background-attachment:fixed;
 }
 
-a {
-	color: var(--teal1);
+.topbar {
+	background-image:var(--banner);
+	height:150px;
+	margin-bottom:var(--content-spacing);
+	border:var(--border);
 }
 
-#main-flex {
-	grid-area: middle;
-	flex-wrap: wrap;
-	border: 5px solid;
-	border-color: var(--green1);
-
+#container {
+	max-width:850px;
+	margin:0 auto;
 }
 
-#main-flex section {
-	flex: 1 1 33%;
-	margin: 2px;
-}
-/* Style the header */
-.header {
-	padding: 30px;
-	text-align: center;
-	font-size: 35px;
-	background-color: var(--blue1);
+#container a {
+	color:var(--link-color);
 }
 
-.side-img {
-	grid-area: left;
+#container {
+	border-top:none;
 }
 
+#flex {
+	display:flex;
+	max-width:850px;
+}
+
+aside {
+	width:30%;
+	margin-left:var(--content-spacing);
+	border-left:var(--border);
+	background-color:var(--background);
+}
+
+.title,.sidebar-title {
+	background-image:var(--titleBars);
+	font-weight:bold;
+	border:var(--border);
+	font-size:20px;
+}
+main {
+	width:74%;
+	background-color:var(--background);
+}
+nav {
+	position:sticky;
+	top:20px;
+}
+nav ul {
+	list-style-image:var(--arrows);
+	margin-left:0;
+	padding-left:30px;
+}
+nav ul li a {
+	color:var(--accent-1);
+}
 .content {
-	display: grid;
-	  grid-template-areas: 
-    'header header header header header header' 
-    'left left left middle middle right' 
-    'footer footer footer footer footer footer';
-	background-color: var (--lightgrey);
-	color: var(--white);
-	width: 100%;
-	text-align: center;
-	border: 5px solid;
-	border-color: var(--red1);
+	padding:25px;
+}
+footer {
+	border:var(--border);
+	height:25px;
+	margin-top:var(--content-spacing);
+	background-image:var(--titleBars);
+	text-align:center;
 }
 
-/* Clear floats after the columns */
-.content:after {
-	content: "";
-	display: table;
-	clear: both;
+#themeDiv {
+	position:sticky;
+	top:550px;
 }
 
-.sidenav {
-	grid-area: right;
-	z-index: 1;
-	background-color: var(--black);
-	overflow-x: hidden;
+@media only screen and (max-width: 640px){
+	nav ul{list-style-image:none;list-style-type:none;}
+	#flex{flex-wrap:wrap;}
+	main{width:100%;order:2;}
+	aside{display:block;width:100%;order:1;margin-left:0;}
+	nav ul{display:flex;flex-wrap:wrap;}
+	nav ul li{padding-right:10px;}
+	nav ul > ul{display:none;}
+}
+@media only screen and (max-height: 640px){
+	nav ul > ul{display:none;}
 }
 
-.activity {
-	color var (--black);
-	float: center;
+/*! CSS Used from: Embedded */
+.copyButton {
+	width:88px;
+	font-size:10px;
+	background-color:black;
+	color:#79DC77;
+	height:21px;
+	margin-bottom:10px;
 }
 
-.linkcard {
-	width: 33%;
-}
-.linkcard:hover {
-	background-color: var(--black);;
-	color: var(--white);
+/*! CSS Used from: Embedded */
+.update {
+	border:2px dashed var(--main-color);
+	padding:5px;
 }
 
-.projects {
-	float: right;
-	width: 33%;
+main {
+	background-color:transparent!important;
+}
+.content {
+	background-color:var(--background);
+}
+.title {
+	margin-top:var(--content-spacing);
+}
+.title:first-child {
+	margin-top:0!important;
+}
+.myButton {
+	display:flex;
+	margin:0 auto;
+	width:150px;
+}
+/*! CSS Used fontfaces */
+@font-face {
+	font-family:"FreePixel";
+	src:url("https://sadhost.neocities.org/fonts/FreePixel.ttf") format("truetype");
 }
 
-/* Side navigation links */
-.sidenav a {
-	color: var(--white);
-	padding: 16px;
-	text-decoration: none;
-	display: block;
-}
 
-.sidenav ul[title]::before {
-	content: attr(title);
-	display: block;
-	color: var(--white);
-	font-weight: bold;
-	padding: 4px;
-}
-
-/* Change color on hover */
-.sidenav a:hover {
-	background-color: var(--black);;
-	color: var(--white);
-}
-
-/* Style the footer */
-.footer {
-	padding: 10px;
-	text-align: center;
-}
-.faq {
-}
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-	.column.side, .column.middle {
-		width: 100%;
-	}
-}

@@ -1,87 +1,75 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<title>Flooded Cove</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div class="header">
-			<h2>The Flooded Realms Homepage</h2>
-		</div>
-		<div class="content">
-			<div class="side-img">
-				<img src="./assets/underconstruction.gif">
-			</div>
-						<div id="main-flex">
-				<section>
-					<div class="bio">
-						<h3> Who am I </h3>
+		<div id="container">
+			<div class="topbar"></div>
+			<div id="flex">
+				<main>
+					<div class="title">Welcome!</div>
+					<div class="content">
+						<p>
 						I am the illustrous author of the legendary Wavestone Keep. My online
 						profile is either Flooded Realms or Shocktohp, I go by both interchangable.
 						I am a programmer and avid ttrpg player. My tastes run in the OSR category
 						of gaming, though I mostly play <a href="https://autarch.co/adventurer-conqueror-king/">ACKS</a>
 						I write modules on occasion, and rant online more. Christ is king.
-
+						</p>
 					</div>
-				</section>
-				<section>
-					<div class="activity">
-						<div class="linkcard">
-							<a href="<?php echo $link; ?>">
-								<h3>Read my most recent blogpost!</h3>
-								<?php echo $title; ?>
-							</a>
-						</div>
+					<div class="title"> Read my most recent blogpost </div>
+					<div class="content"> 							<a href="<?php echo $link; ?>">
+							<?php echo $title; ?>
+						</a>
 					</div>
-				</section>
-				<section>
-					<div class="projects">
-						<h3>Projects I am actively working on</h3>
+					<div class="title">Current Projects</div>
+					<div class="content">
 						<ul>
 							<li>NAP III Contest Entry, working title: The Southern Reaches</li>
 							<li>ACKS 1e Foundry Module refactor</li>
 						</ul>
 					</div>
-					<section>
-			</div>
-			<div class="sidenav">
-				<div class="blogroll">
-					<ul title="Blogs I Like">
-						<li><a href="https://clericswearringmail.blogspot.com/">Clerics Wear Ringmail</a></li>
-						<li><a href="https://princeofnothingblogs.wordpress.com/">Age of Dusk</a></li>
-					</ul>
-				</div>
-				<div class="links">
-					<ul title="Places you can find me">
-						<li><a href="https://twitter.com/FloodedRealms" rel=me>Twitter</a></li>
-						<li><a href="https://borderlandkeep.com/floodedrealms" rel=me>Mastodon</a></li>
-						<!--			<li><a href="https://pipecottagesocial.com/members/shocktohp/"
-							rel=me>Pipe Cottage</a></li> -->
-					</ul>
-				</div>
-				<div class="links">
-					<ul title="Places you can buy my stuff">
-						<li><a href="https://www.drivethrurpg.com/browse/pub/21168/Flooded-Realms-Adventure-Press" rel=me>dtrpg</a></li>
-						<li><a href="https://biggeekemporium.com/store/flooded-realms-adventure-press" rel=me>BGE</a></li>
-						<li><a href="https://flooded-realms.itch.io/">itch</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-<div class="faq">
-				<h3> Why does this site look like complete garbage? </h3>
-				Because I am a big believer in the the <a href="https://indieweb.org/">indie web.</a> There was
-				a time before the walled gardens of social media, substack, and other conglomerated online services.
-				This is a callback to that time. Anyone can have their own, personalized, landing site on the web.
-				More interesting and more expressive than any facebook / twitter / mewe profile can ever be. Even
-				more than the myspace of old. However, I am not a graphic design artist, I am a back-end developer.
-				So that means that my site <i> looks </i> like it was designed by someone who should never be
-				allowed to design anything. Because it was. However, this should give you hope! Anyone can have a
-				webpage, and people should. It isn't a beauty contest. If you are interested in why I
-				believe this and still use services like substack to blog, click <a href="faq.html">here</a>
-			</div>
-		</div>
+					<div class="title"> Wanna get my modules? They are free! </div>
+					<div class="content">
+						<ul>
+							<li><a href="https://www.drivethrurpg.com/browse/pub/21168/Flooded-Realms-Adventure-Press" rel=me>dtrpg</a></li>
+							<li><a href="https://biggeekemporium.com/store/flooded-realms-adventure-press" rel=me>BGE</a></li>
+							<li><a href="https://flooded-realms.itch.io/">itch</a></li>
+						</ul>
+					</div>
 
+				</main>
+				<aside>
+					<div class="sidebar-title">Links galore</div>
+					<nav id="nav">
+						<ul>
+							<li>Blogs I Like</li> 
+							<ul>
+								<li><a href="https://clericswearringmail.blogspot.com/feeds/posts/default">Clerics Wear Ringmail</a></li>
+								<li><a href="https://princeofnothingblogs.wordpress.com/">Age of Dusk</a></li>
+								<li><a href="https://legendofthebones.blogspot.com/feeds/posts/default">Legend of the Bones</a></li>
+								<li><a href="https://tenfootpole.org/ironspike/?feed=rss2">Ten Foot Pole</a></li>
+								<li><a href="https://fafastgaming.blogspot.com/feeds/posts/default">Fafast's Gaming</a></li>
+								<li><a href="https://osrgrimoire.blogspot.com/feeds/posts/default">OSR Grimoire</a></li>
+								<li><a href="https://maziriansgarden.blogspot.com/feeds/posts/default">Mazirian's Garden</a></li>
+								<li><a href="http://www.chaotichenchmen.com/feeds/posts/default">Chaotic Henchmen</a></li>
+								<li><a href="https://osrsimulacrum.blogspot.com/feeds/posts/default">OSR Simulacrum</a></li>
+							</ul>
+							<li>Where I hang out</li>
+							<ul>
+								<li><a href="https://twitter.com/FloodedRealms" rel=me>Twitter</a></li>
+								<li><a href="https://borderlandkeep.com/floodedrealms" rel=me>Mastodon</a></li>
+								<!--			<li><a href="https://pipecottagesocial.com/members/shocktohp/"
+									rel=me>Pipe Cottage</a></li> -->
+							</ul>
+
+						</ul>
+					</nav>
+				</aside>
+			</div>
+		</div>
 	</body>
 </html>
