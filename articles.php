@@ -23,6 +23,7 @@ These are articles that should be preserved and easily accessible for posterity 
 							       <li><a href="http://lordgwydion.blogspot.com/2023/04/choosing-your-ruleset-as-difficulty.html">Rules as Difficulty - Lord Gwydion</a></li>
 							       <li><a href="https://princeofnothingblogs.wordpress.com/2022/05/02/that-is-why-you-fail-an-analysis-of-the-corrosive-effect-of-artpunkmanry-in-the-essay-never-as-written-by-luka-rejec/">Why you fail (response to 'Never as Written' by Luka Rejec - Prince of Nothing</a></li>
 							       <li><a href="https://thealexandrian.net/wordpress/45711/roleplaying-games/xandering-the-dungeon-addendum-how-to-use-a-melan-diagram">Using a Melan Diagram - The Alexandrian</a></li>
+<li><a href="https://fomalhaut.lfg.hu/2011/04/08/the-alternate-primer-for-old-school-gaming/"> Alternate Primer for Old School Gaming - Gabor Lux </a></li>
 					</div>
 				</main>
 				<aside>
